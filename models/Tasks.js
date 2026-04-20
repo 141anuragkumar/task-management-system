@@ -1,8 +1,8 @@
-// to create - New-Item -Path "models\Task.js" -ItemType File
+// to create - New-Item -Path "models\Tasks.js" -ItemType File
 
 const mongoose = require('mongoose');
 
-const taskSchema = new mongoose.Schema({
+const Taskschema = new mongoose.Schema({
   title: {
     type: String,
     required: [true, 'Title is required'],
@@ -23,4 +23,4 @@ const taskSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Task', taskSchema);
+module.exports = mongoose.model('Tasks', Taskschema);

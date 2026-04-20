@@ -1,9 +1,7 @@
-// to create using this command - New-Item -Path "controllers\taskController.js" -ItemType File
+const Task = require('../models/Tasks');
 
-const Task = require('../models/Task');
-
-// Get all tasks
-const getTasks = async (req, res) => {
+// Get all Tasks
+const getAllTasks = async (req, res) => {
   try {
     const tasks = await Task.find().sort({ createdDate: -1 });
     res.status(200).json(tasks);
@@ -12,7 +10,7 @@ const getTasks = async (req, res) => {
   }
 };
 
-// Create new task
+// Create new Task
 const createTask = async (req, res) => {
   try {
     const { title, description } = req.body;
@@ -33,7 +31,7 @@ const createTask = async (req, res) => {
   }
 };
 
-// Update task status
+// Update Task status
 const updateTask = async (req, res) => {
   try {
     const { status } = req.body;
@@ -58,7 +56,7 @@ const updateTask = async (req, res) => {
   }
 };
 
-// Delete task
+// Delete Task
 const deleteTask = async (req, res) => {
   try {
     const task = await Task.findByIdAndDelete(req.params.id);
@@ -74,7 +72,7 @@ const deleteTask = async (req, res) => {
 };
 
 module.exports = {
-  getTasks,
+  getAllTasks,
   createTask,
   updateTask,
   deleteTask

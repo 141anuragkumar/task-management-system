@@ -1,7 +1,7 @@
 {
-  "name": "task-management-backend",
+  "name": "Tasks-management-backend",
   "version": "1.0.0",
-  "description": "Backend for MERN Task Management System",
+  "description": "Backend for MERN Tasks Management System",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
