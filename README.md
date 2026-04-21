@@ -11,3 +11,6 @@ POST NEW
 <img width="1094" height="1085" alt="POST NEW" src="https://github.com/user-attachments/assets/dafac105-a196-4a45-a03a-80b704e56eed" />
 GET NEW
 <img width="1082" height="1070" alt="GET NEW" src="https://github.com/user-attachments/assets/79ecb9f2-072c-4ae3-b424-93d7462ad475" />
+DATA
+<img width="1896" height="998" alt="Screenshot 2026-04-21 182430" src="https://github.com/user-attachments/assets/18475f43-f0e4-4791-a3b7-1ba82f63f6b2" />
+
